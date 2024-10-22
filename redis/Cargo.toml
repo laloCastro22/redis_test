@@ -1,0 +1,11 @@
+[package]
+name = "redis-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+redis = "0.27.5"
+warp = "0.3"
+serde = { version = "1.0", features = ["derive"] }  # Para serializar y deserializar JSON
+serde_json = "1.0"  # Para manipular JSON
+tokio = { version = "1", features = ["full"] }
